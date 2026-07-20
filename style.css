@@ -131,7 +131,10 @@ border-bottom:1px solid rgba(255,255,255,.35);
 .hero-content h1{
     font-family:'Playfair Display',serif;
     color:#fff;
-    font-size:60px;
+    font-size:68px;
+    line-height:1.1;
+    letter-spacing:-1px;
+    text-shadow:0 4px 20px rgba(0,0,0,.35);
     margin-bottom:20px;
 }
 
