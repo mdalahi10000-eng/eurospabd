@@ -254,16 +254,36 @@ border-bottom:1px solid rgba(255,255,255,.35);
         display:none;
     }
 
+    /* Hero */
+
+    .hero-content{
+        padding:0 20px;
+    }
+
     .hero-content h1{
-    font-size:48px;
-    line-height:1.15;
-}
+        font-size:42px;
+        line-height:1.15;
+    }
 
     .hero-content p{
-    font-size:17px;
-    max-width:320px;
-    margin:15px auto 35px;
-}
+        font-size:18px;
+        line-height:1.6;
+        max-width:320px;
+        margin:15px auto 30px;
+    }
+
+    .hero-buttons{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        padding:14px 28px;
+        font-size:18px;
+    }
+
 }
 /* Services */
 
@@ -389,8 +409,8 @@ border-bottom:1px solid rgba(255,255,255,.35);
     position:fixed;
     right:20px;
     bottom:90px;
-    width:56px;
-    height:56px;
+    width:60px;
+    height:60px;
     background:#25D366;
     border-radius:50%;
     display:flex;
@@ -414,8 +434,8 @@ border-bottom:1px solid rgba(255,255,255,.35);
     position:fixed;
     right:20px;
     bottom:20px;
-    width:56px;
-    height:56px;
+    width:60px;
+    height:60px;
     background:#7B2FF7;
     border-radius:50%;
     display:flex;
@@ -689,8 +709,8 @@ border-bottom:1px solid rgba(255,255,255,.35);
     position:fixed;
     right:20px;
     bottom:160px;
-    width:56px;
-    height:56px;
+    width:60px;
+    height:69px;
     background:#229ED9;
     border-radius:50%;
     display:flex;
