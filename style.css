@@ -1,3 +1,6 @@
+body{
+    background:red !important;
+}
 html {
     scroll-behavior: smooth;
 }
