@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[110vh] sm:min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen md:min-h-[110vh] flex items-center justify-center overflow-hidden"
       aria-label="Hero section"
     >
       {/* Background image with parallax */}
@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-6 sm:gap-8 mt-14 max-w-lg mx-auto animate-fade-in px-4">
+        <div className="grid grid-cols-3 gap-6 sm:gap-8 mt-20 sm:mt-14 max-w-lg mx-auto animate-fade-in px-4">
           {[
             { value: '10+', label: 'Years Excellence' },
             { value: '5K+', label: 'Happy Clients' },
@@ -147,7 +147,7 @@ export default function Hero() {
       <a
         href="#about"
         aria-label="Scroll to about section"
-        className="absolute bottom-5 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/50"
+        className="absolute bottom-3 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/50"
       >
         <span className="text-xs tracking-widest uppercase">Discover</span>
         <ChevronDown size={20} className="animate-bounce" />
