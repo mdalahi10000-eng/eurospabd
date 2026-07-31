@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-14 max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+        <div className="grid grid-cols-3 gap-6 sm:gap-8 mt-14 max-w-lg mx-auto animate-fade-in px-4">
           {[
             { value: '10+', label: 'Years Excellence' },
             { value: '5K+', label: 'Happy Clients' },
@@ -132,12 +132,12 @@ export default function Hero() {
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
               <div
-                className="text-2xl sm:text-3xl font-bold"
+                className="text-3xl sm:text-3xl font-bold leading-none"
                 style={{ fontFamily: "'Playfair Display', serif", color: '#DCC1F0' }}
               >
                 {value}
               </div>
-              <div className="text-xs sm:text-sm text-white/60 mt-1">{label}</div>
+              <div className="text-xs sm:text-sm text-white/60 mt-2 leading-tight">{label}</div>
             </div>
           ))}
         </div>
