@@ -60,7 +60,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-0">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-24 sm:pt-0">git status
 
         <div
           className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5 animate-fade-in"
