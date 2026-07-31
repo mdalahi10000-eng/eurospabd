@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[110vh] sm:min-h-screen flex items-center justify-center overflow-hidden"
       aria-label="Hero section"
     >
       {/* Background image with parallax */}
