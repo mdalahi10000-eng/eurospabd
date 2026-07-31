@@ -147,7 +147,7 @@ export default function Hero() {
       <a
         href="#about"
         aria-label="Scroll to about section"
-        className="grid grid-cols-3 gap-6 sm:gap-8 mt-[72px] max-w-lg mx-auto animate-fade-in px-4"
+        className="absolute bottom-5 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/50"
       >
         <span className="text-xs tracking-widest uppercase">Discover</span>
         <ChevronDown size={20} className="animate-bounce" />
