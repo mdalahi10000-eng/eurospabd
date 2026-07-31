@@ -2,7 +2,8 @@ import { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { WHATSAPP_NUMBER, PHONE_NUMBER } from '@/config';
 
-const HERO_IMG = 'https://images.pexels.com/photos/4170175/pexels-photo-4170175.jpeg?auto=compress&cs=tinysrgb&w=1920';
+const HERO_IMG =
+  'https://images.pexels.com/photos/4170175/pexels-photo-4170175.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
 export default function Hero() {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -13,6 +14,7 @@ export default function Hero() {
         parallaxRef.current.style.transform = `translateY(${window.scrollY * 0.4}px)`;
       }
     };
+
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -20,10 +22,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen md:min-h-[110vh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[100svh] md:min-h-[110vh] flex items-center justify-center overflow-hidden"
       aria-label="Hero section"
     >
-      {/* Background image with parallax */}
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <div ref={parallaxRef} className="absolute inset-0 scale-110">
           <img
@@ -34,7 +36,7 @@ export default function Hero() {
             fetchPriority="high"
           />
         </div>
-        {/* Deep purple overlay */}
+
         <div
           className="absolute inset-0"
           style={{
@@ -44,24 +46,28 @@ export default function Hero() {
         />
       </div>
 
-      {/* Decorative floating orbs */}
+      {/* Decorative Orbs */}
       <div
         className="absolute top-1/4 left-10 w-64 h-64 rounded-full opacity-10 blur-3xl animate-pulse"
         style={{ background: '#B48AD6' }}
       />
       <div
         className="absolute bottom-1/4 right-10 w-80 h-80 rounded-full opacity-10 blur-3xl animate-pulse"
-        style={{ background: '#7D4DB3', animationDelay: '1.5s' }}
+        style={{
+          background: '#7D4DB3',
+          animationDelay: '1.5s',
+        }}
       />
 
-      {/* Hero Content Card – glassmorphism */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 pt-16 sm:pt-0 text-center">
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-0">
+
         <div
-          className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 animate-fade-in"
+          className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-5 animate-fade-in"
           style={{
-            background: 'rgba(255,255,255,0.12)',
+            background: 'rgba(255,255,255,.12)',
             backdropFilter: 'blur(14px)',
-            border: '1px solid rgba(255,255,255,0.18)',
+            border: '1px solid rgba(255,255,255,.18)',
             color: '#DCC1F0',
           }}
         >
@@ -69,13 +75,16 @@ export default function Hero() {
         </div>
 
         <h1
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in"
-          style={{ fontFamily: "'Playfair Display', serif", animationDelay: '0.2s' }}
+          className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-5 leading-tight animate-fade-in"
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            animationDelay: '0.2s',
+          }}
         >
           Rediscover Your{' '}
           <span
             style={{
-              background: 'linear-gradient(135deg, #DCC1F0, #B48AD6)',
+              background: 'linear-gradient(135deg,#DCC1F0,#B48AD6)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
             }}
@@ -85,21 +94,21 @@ export default function Hero() {
         </h1>
 
         <p
-          className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in"
+          className="text-base sm:text-xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in"
           style={{ animationDelay: '0.4s' }}
         >
-          Step into Dhaka's most exquisite sanctuary of wellness. Indulge in premium massage therapies
-          crafted for deep restoration and radiant wellbeing.
+          Step into Dhaka's most exquisite sanctuary of wellness.
+          Indulge in premium massage therapies crafted for deep
+          restoration and radiant wellbeing.
         </p>
 
-        {/* Glassmorphism CTA card */}
         <div
           className="inline-flex flex-col sm:flex-row items-center gap-4 p-2 rounded-2xl animate-fade-in"
           style={{
-            background: 'rgba(255,255,255,0.10)',
+            background: 'rgba(255,255,255,.10)',
             backdropFilter: 'blur(14px)',
-            border: '1px solid rgba(255,255,255,0.15)',
-            boxShadow: '0 8px 32px rgba(46,26,71,0.25)',
+            border: '1px solid rgba(255,255,255,.15)',
+            boxShadow: '0 8px 32px rgba(46,26,71,.25)',
             animationDelay: '0.6s',
           }}
         >
@@ -107,14 +116,15 @@ export default function Hero() {
             href={`https://wa.me/${WHATSAPP_NUMBER}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 rounded-xl text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="px-8 py-4 rounded-xl text-base font-semibold text-white transition-all duration-300 hover:scale-105"
             style={{
-              background: 'linear-gradient(135deg, #5B3A86, #7D4DB3)',
-              boxShadow: '0 4px 20px rgba(91,58,134,0.5)',
+              background: 'linear-gradient(135deg,#5B3A86,#7D4DB3)',
+              boxShadow: '0 4px 20px rgba(91,58,134,.5)',
             }}
           >
             Book a Session
           </a>
+
           <a
             href={`tel:${PHONE_NUMBER}`}
             className="px-8 py-4 rounded-xl text-base font-semibold text-white/90 hover:text-white transition-all duration-300 hover:bg-white/10"
@@ -123,8 +133,8 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats row */}
-        <div className="grid grid-cols-3 gap-6 sm:gap-8 mt-20 sm:mt-14 max-w-lg mx-auto animate-fade-in px-4">
+        {/* Stats */}
+        <div className="grid grid-cols-3 gap-6 sm:gap-8 mt-16 sm:mt-14 max-w-lg mx-auto animate-fade-in px-4">
           {[
             { value: '10+', label: 'Years Excellence' },
             { value: '5K+', label: 'Happy Clients' },
@@ -132,24 +142,33 @@ export default function Hero() {
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
               <div
-                className="text-3xl sm:text-3xl font-bold leading-none"
-                style={{ fontFamily: "'Playfair Display', serif", color: '#DCC1F0' }}
+                className="text-3xl font-bold leading-none"
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  color: '#DCC1F0',
+                }}
               >
                 {value}
               </div>
-              <div className="text-xs sm:text-sm text-white/60 mt-2 leading-tight">{label}</div>
+
+              <div className="text-xs sm:text-sm text-white/60 mt-2 leading-tight">
+                {label}
+              </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Scroll cue */}
+      {/* Desktop Scroll Cue */}
       <a
         href="#about"
         aria-label="Scroll to about section"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-1 text-white/50"
       >
-        <span className="text-xs tracking-widest uppercase">Discover</span>
+        <span className="text-xs tracking-widest uppercase">
+          Discover
+        </span>
+
         <ChevronDown size={20} className="animate-bounce" />
       </a>
     </section>
