@@ -55,7 +55,7 @@ export default function Hero() {
       />
 
       {/* Hero Content Card – glassmorphism */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 pt-16 sm:pt-0 text-center">
         <div
           className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 animate-fade-in"
           style={{
