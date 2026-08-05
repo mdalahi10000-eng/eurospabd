@@ -1,6 +1,6 @@
 import { Leaf, Award, Users, Sparkles } from 'lucide-react';
 
-const ABOUT_IMG_1 = 'https://images.pexels.com/photos/17640379/pexels-photo-17640379.jpeg?auto=compress&cs=tinysrgb&w=1200';
+const ABOUT_IMG_1 = '/about-main.png';
 const ABOUT_IMG_2 = 'https://images.pexels.com/photos/6186740/pexels-photo-6186740.jpeg?auto=compress&cs=tinysrgb&w=800';
 
 const FEATURES = [
