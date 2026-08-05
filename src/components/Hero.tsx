@@ -2,8 +2,7 @@ import { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { WHATSAPP_NUMBER, PHONE_NUMBER } from '@/config';
 
-const HERO_IMG =
-  'https://images.pexels.com/photos/4170175/pexels-photo-4170175.jpeg?auto=compress&cs=tinysrgb&w=1920';
+const HERO_IMG = '/hero1.png';
 
 export default function Hero() {
   const parallaxRef = useRef<HTMLDivElement>(null);
