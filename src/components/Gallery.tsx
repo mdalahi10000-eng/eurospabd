@@ -2,14 +2,41 @@ import { useState } from 'react';
 import { X } from 'lucide-react';
 
 const GALLERY = [
-  { src: 'https://images.pexels.com/photos/4170175/pexels-photo-4170175.jpeg?auto=compress&cs=tinysrgb&w=900', alt: 'Luxury spa massage room interior', span: 'lg:col-span-2 lg:row-span-2' },
-  { src: 'https://images.pexels.com/photos/6186740/pexels-photo-6186740.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Spa candles and ceramic holder', span: '' },
-  { src: 'https://images.pexels.com/photos/6186752/pexels-photo-6186752.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Rolled towels and candlelight on wooden shelf', span: '' },
-  { src: 'https://images.pexels.com/photos/7789646/pexels-photo-7789646.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Elegant massage room with illuminated wall panel', span: '' },
-  { src: 'https://images.pexels.com/photos/1926811/pexels-photo-1926811.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Relaxing spa scene with candles, towels, and flowers', span: '' },
-  { src: 'https://images.pexels.com/photos/6560298/pexels-photo-6560298.jpeg?auto=compress&cs=tinysrgb&w=900', alt: 'Hot stone massage therapy session', span: 'lg:col-span-2' },
-  { src: 'https://images.pexels.com/photos/17640379/pexels-photo-17640379.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Minimalist spa interior with curved furniture', span: '' },
-  { src: 'https://images.pexels.com/photos/11741344/pexels-photo-11741344.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Elegant candle and towels in spa setting', span: '' },
+  {
+    src: '/gallery/Reception1.png',
+    alt: 'Euro Spa Center reception and lounge',
+    span: 'lg:col-span-2 lg:row-span-2',
+  },
+  {
+    src: '/gallery/Reception2.png',
+    alt: 'Euro Spa Center lounge area',
+    span: '',
+  },
+  {
+    src: '/gallery/Reception3.png',
+    alt: 'Euro Spa Center reception desk',
+    span: '',
+  },
+  {
+    src: '/gallery/Reception4.png',
+    alt: 'Spa bathroom',
+    span: '',
+  },
+  {
+    src: '/gallery/Reception5.png',
+    alt: 'Spa washroom and vanity area',
+    span: '',
+  },
+  {
+    src: '/gallery/Reception6.png',
+    alt: 'Euro Spa Center interior',
+    span: 'lg:col-span-2',
+  },
+  {
+    src: '/gallery/Reception7.png',
+    alt: 'Euro Spa Center spa team',
+    span: '',
+  },
 ];
 
 export default function Gallery() {
@@ -75,10 +102,10 @@ export default function Gallery() {
             <X size={28} />
           </button>
           <img
-            src={lightbox.replace(/w=\d+/, 'w=1600')}
-            alt="Enlarged spa gallery image"
-            className="max-w-full max-h-[90vh] object-contain rounded-2xl"
-          />
+  src={lightbox}
+  alt="Enlarged spa gallery image"
+  className="max-w-full max-h-[90vh] object-contain rounded-2xl"
+/>
         </div>
       )}
     </section>
