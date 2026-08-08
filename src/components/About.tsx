@@ -1,7 +1,8 @@
 import { Leaf, Award, Users, Sparkles } from 'lucide-react';
 
-const ABOUT_IMG_1 = '/about-main.png';
-const ABOUT_IMG_2 = 'https://images.pexels.com/photos/6186740/pexels-photo-6186740.jpeg?auto=compress&cs=tinysrgb&w=800';
+const ABOUT_IMG_1 = '/gallery/Reception3.png';
+
+const ABOUT_IMG_2 = '/gallery/Reception2.png';
 
 const FEATURES = [
   { icon: Leaf, title: 'Natural & Organic', desc: 'Pure essential oils and organic products for holistic care.' },
